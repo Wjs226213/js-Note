@@ -630,5 +630,22 @@ int main(){
 
 
 **第三题 得到数字的算数平方根的整数部分**
->[!tip] 判断是不是2的次幂首先要知道2的次幂首先是一个偶数，其次被2除到最后商是1
->
+>[!tip] 唯一需要注意的一点就是在
+
+```C
+#include <stdio.h>
+
+int main()
+{
+    // 寻找算数平方根
+    int a = 9;
+    int i = 1;
+    while (i * i <= a)
+    {
+        i++;
+        printf("%d",i);
+    }
+    printf("result = %d",i - 1);
+    return 0;
+}
+```
