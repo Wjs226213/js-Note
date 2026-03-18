@@ -606,3 +606,24 @@ int main(){
 >[!tip] 判断是不是2的次幂首先要知道2的次幂首先是一个偶数，其次被2除到最后商是1
 >
 
+```c
+#include <stdio.h>
+
+int main(){
+    // 判断一个数字是不是2的次幂
+    int a = 2;
+    int coumt = 0;
+    while (a  % 2 ==0 && a > 1)
+    {
+        a /= 2;
+    }
+    if (a == 1)
+    {
+        printf("是2的次幂");
+    }
+    else{
+        printf("不是2的次幂");
+    }
+    return 0;
+}
+```
