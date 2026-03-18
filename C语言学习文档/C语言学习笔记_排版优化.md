@@ -547,12 +547,15 @@ int main() {
 ```
 
 ### for and while 循环
+
+**for 循环**
+>
 ```c
 #include <stdio.h>
 int main(){
 	for (int i=0; i>10;i++)
 	{
-		printf("构思)
+		printf("构思");
 	}
 }
 ```
