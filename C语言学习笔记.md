@@ -137,130 +137,123 @@ int main() {
 
 ### 标识符和键盘录入
 
-**标识符**
-
-<aside> 💡
-
-代码中自己起的名称用来命名变量
-
-- 不能使用数字开头
-- 不可以是关键字
-- 区分大小写
-- 由数字字母下划线组成 </aside>
+#### 标识符规则
+> **提示**：标识符是代码中自己起的名称，用来命名变量。
+> - 不能使用数字开头
+> - 不可以是关键字
+> - 区分大小写
+> - 由数字、字母、下划线组成
 
 ---
 
-**键盘录入**
-
+#### 基本键盘录入
 ```c
 #include <stdio.h>
-int main(){
-	int a;
-	scanf("%d",&a);
-	print("a",%d);
+int main() {
+    int a;
+    scanf("%d", &a);
+    printf("a = %d", a);
+    return 0;
 }
 ```
 
 ---
 
-**键盘录入的小细节**
+#### 键盘录入细节
 
+**示例1：混合输入**
 ```c
-
 #include <stdio.h>
 
 int main() {
-	int age;
-	char str[10]; //一个字符串
-	
-	printf("请输入年龄："); // 建议加上提示，用户体验更好
-	scanf("%d", &age);
-	
-	printf("请输入字符串：");
-	// 修改点：去掉 &，直接用 str
-	scanf("%s", str);
-	
-	printf("年龄：%d\\n", age);
-	printf("字符串：%s\\n", str);
-	
-	return 0;
-}
+    int age;
+    char str[10];  // 字符串数组
 
+    printf("请输入年龄：");  // 建议加上提示，用户体验更好
+    scanf("%d", &age);
+
+    printf("请输入字符串：");
+    scanf("%s", str);  // 注意：字符串不需要 & 符号
+
+    printf("年龄：%d\n", age);
+    printf("字符串：%s\n", str);
+
+    return 0;
+}
 ```
 
+**示例2：多个数值输入**
 ```c
 #include <stdio.h>
 
 int main() {
-	int a;
-	int b;
-	scanf("%d 	%d",&a,&b); //在输入数据的时候必须要和双引号内容一致
-	printf("a = %d b = %d",a,b);
+    int a;
+    int b;
+    scanf("%d %d", &a, &b);  // 输入数据时必须和双引号内容格式一致
+    printf("a = %d, b = %d", a, b);
+    return 0;
 }
 ```
 
 ### 运算符
 
-<aside> 💡
+> **提示**：
+> - 小数计算是不精确的
+> - 所有的非零数字都表示真（true）
 
-小数计算是不精确的
-
-所有的数字表示的的都是真
-
-</aside>
-
-**除法**
-
+#### 除法运算
 ```c
 #include <stdio.h>
-int main (){
-	int a = 10;
-	int b = 2;
-	printf("%d" , 10/2)
-```
-
-**取余 必须全部是整数**
-
-```c
-#include <stdio.h>
-int main(){
-printf("%d",10%3);
+int main() {
+    int a = 10;
+    int b = 2;
+    printf("%d", 10 / 2);
+    return 0;
 }
 ```
 
-**运算符题目**
-
+#### 取余运算（必须全部是整数）
 ```c
 #include <stdio.h>
-int main(){
-	int a = 1234;
-	//	获取每一次的最后一个位置都是通过对该数值%10取余数
-	// 但是最后一个位置上的数字通常是上一个位置的数字的商
-	printf("a = %d\\n",a % 10);
-	printf("a = %d\\n",a / 10 % 10);
-	printf("a = %d\\n",a / 100 %10);
-	printf("a = %d\\n",a / 1000 %10);	
+int main() {
+    printf("%d", 10 % 3);
+    return 0;
+}
+```
+
+#### 运算符应用示例：提取数字各位
+```c
+#include <stdio.h>
+int main() {
+    int a = 1234;
+    // 获取每一位数字：
+    // 个位：a % 10
+    // 十位：a / 10 % 10
+    // 百位：a / 100 % 10
+    // 千位：a / 1000 % 10
+    printf("个位：%d\n", a % 10);
+    printf("十位：%d\n", a / 10 % 10);
+    printf("百位：%d\n", a / 100 % 10);
+    printf("千位：%d\n", a / 1000 % 10);
+    return 0;
 }
 ```
 
 ### 数据类型转换
 
-<aside> 💡
-
-根据数据类型的大小的关系，数据类型小的与数据类型大的结合会让结果变成其中大的数据类型
-
-short char 类型完成运算的额时候会先提升为int 数据类型完成运算
-
-</aside>
+> **提示**：
+> - 根据数据类型的大小关系，数据类型小的与数据类型大的结合会让结果变成其中大的数据类型
+> - `short`、`char` 类型完成运算的时候会先提升为 `int` 数据类型完成运算
 
 ```c
 #include <stdio.h>
-int main(){
-	int a = 1234;
-	short s1=10;
-	short s2 =24 ;
-	short result  =(short)(s1 +s2);
-	printf("size = %d",sizeof(result));  
+int main() {
+    int a = 1234;
+    short s1 = 10;
+    short s2 = 24;
+    short result = (short)(s1 + s2);  // 强制类型转换
+    printf("size = %d", sizeof(result));
+    return 0;
 }
 ```
 # 高级运算符
