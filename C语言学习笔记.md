@@ -297,7 +297,6 @@ int main(){
 }
 ```
 # 高级运算符
-# 高级运算符
 
 ### 自增运算
 
@@ -514,3 +513,43 @@ int main(){
 	return 0;
 }
 ```
+
+# 流程控制语句
+### IF
+
+```c
+#include <stdio.h>
+int main(){
+	float tw = 37.5;
+	if ( tw > 40)
+	{
+		printf("过高");
+	}else{
+		printf("屁事没有");
+	}
+}
+```
+
+### SWITCH
+
+```c
+#include <stdio.h>
+int main(){
+    int temp = 1;
+    switch (temp)
+    {
+    case 1:
+    printf("吕德华真的c");
+        break;
+    case 2:
+    printf("牛逼");
+    break;
+    default:
+    printf("我王嘉硕天下无敌、");
+        break;
+    }
+
+}
+```
+
+**补充**
