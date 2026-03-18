@@ -566,7 +566,14 @@ int main(){
 >**适合**：不知道需要循环多少次。
 
 ```c
-#incu
+#include <stdio.h>
+int main(){
+	int i = 0;
+	while(i <10){
+		printf("构思");
+		i++；
+	}
+}
 
 ```
 
