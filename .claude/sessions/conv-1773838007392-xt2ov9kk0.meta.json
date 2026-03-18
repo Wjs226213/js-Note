@@ -3,18 +3,18 @@
   "title": "Acknowledge user message",
   "titleGenerationStatus": "success",
   "createdAt": 1773838007396,
-  "updatedAt": 1773838073508,
-  "lastResponseAt": 1773838073508,
+  "updatedAt": 1773838639242,
+  "lastResponseAt": 1773838639242,
   "sessionId": "7483ab72-5da1-4c59-be8e-73310a9dfb0c",
   "sdkSessionId": "7483ab72-5da1-4c59-be8e-73310a9dfb0c",
   "currentNote": "目录.md",
   "usage": {
     "model": "deepseek-reasoner,",
-    "inputTokens": 25,
+    "inputTokens": 82,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 20608,
+    "cacheReadInputTokens": 35584,
     "contextWindow": 200000,
-    "contextTokens": 20633,
-    "percentage": 10
+    "contextTokens": 35666,
+    "percentage": 18
   }
 }
