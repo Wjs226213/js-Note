@@ -546,7 +546,18 @@ int main() {
 }
 ```
 
-### for and w
+### for and while 循环
+```c
+#include <stdio.h>
+int main(){
+	for (int i=0; i>10;i++)
+	{
+		printf("构思)
+	}
+}
+```
+
+
 
 ---
 
