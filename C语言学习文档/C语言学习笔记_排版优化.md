@@ -548,8 +548,9 @@ int main() {
 
 ### for and while 循环
 
-**for 循环**
->
+**==for 循环==**
+>**包含** ：初始化 - 条件按表达式 - 自增表达式 - 循环体 
+>**适合**：zhi'dao
 ```c
 #include <stdio.h>
 int main(){
