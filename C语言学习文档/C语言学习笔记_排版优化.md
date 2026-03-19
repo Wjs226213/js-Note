@@ -651,7 +651,21 @@ int main()
 ```
 
 ==do while ==
-
 >[!tip] 先执行代码后执行判断无论怎样代码都会执行一次
+```c
+#include <stdio.h>
+int main()
+{
+    int i = 1;
+    do
+    {
+        printf("执行do while\n");
+        i++;
+    } while (i<=10);
+    return 0;
+}
+
+```
 
 
+==循环高级部分
