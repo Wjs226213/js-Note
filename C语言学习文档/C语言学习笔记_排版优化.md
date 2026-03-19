@@ -651,3 +651,5 @@ int main()
 ```
 
 ==do while ==
+
+>[!tip] 
