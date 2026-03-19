@@ -670,3 +670,22 @@ int main()
 
 ### 循环高级部分
 
+```c
+#include <stdio.h>
+int main()
+{
+    for (int i = 1; i < 5; i++)
+    {
+        for (int j = i; j < 5; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+    // 第一次 i = 1 第一行 - 内部 1 - 5
+    // 第二次 i = 2 第二行 - 内部 2 - 5
+
+}
+```
+```
