@@ -669,7 +669,4 @@ int main()
 
 
 ### 循环高级部分
-==for==
-==while==
-==do while==
 
