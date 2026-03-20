@@ -741,3 +741,32 @@ int main()
     }
 }
 ```
+==质数==
+```c
+#include <stdio.h>
+
+int main()
+{
+    int count_all = 0;                // 统计总量
+    for (size_t i = 2; i <= 100; i++) // 判断范围
+    {
+        int count = 0;              // 统计当前数字是否是质数的变量
+        for (int j = 2; j < i; j++) // 寻找当前数字书是否是质数
+        {
+            if (i % j == 0) // 进行判区间内有其他数字就停止
+            {
+                count++;
+                break;
+            }
+        }
+        if (count == 0) // 判断该当前数字是不是质数
+        {
+            count_all++; // 统计
+        }
+    }
+    printf("all  = %d", count_all);
+    return 0;
+
+}
+
+```
