@@ -883,3 +883,5 @@ int main()
 	printf("%d",a);
 }
 ```
+### 数组
+>[!tip] int arr [length];
