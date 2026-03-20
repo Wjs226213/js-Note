@@ -770,3 +770,31 @@ int main()
 }
 
 ```
+**==幂级数==**
+```c
+#include <stdio.h>
+
+int main()
+
+{
+    long long sum = 0;               // 统计全部结果
+    for (size_t i = 1; i <= 10; i++) // 外层次数
+    {
+        long long pow = 1;              //  统计当前次数的次方
+        for (size_t j = 1; j <= i; j++) // 区间内的数字
+        {
+            pow *= i;
+            // pow = pow * i;
+            // 1  1*1
+            // 2  1*2  2*2
+            // 3  1*3  3*3
+        }
+        sum += pow;
+    }
+    printf("sum = %d", sum);
+
+    return 0;
+
+}
+
+```
