@@ -914,7 +914,7 @@ printf("%p\n",&arr+1);
 **==数组做为函数的参数传递==**
 >[!tip] 数组作为函数的参数实际上传递的是数组的首地址
 
-  ```c
+```c
   #include <stdio.h>
 
 void bl(int arr[], int len)
@@ -926,12 +926,8 @@ void bl(int arr[], int len)
 }
 int main()
 {
-
     int arr[] = {1, 2, 3};
-
     int len = sizeof(arr) / sizeof(int);
-
     bl(arr, len);
-
 }
-  ```
+```
