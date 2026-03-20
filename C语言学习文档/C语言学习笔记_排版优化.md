@@ -700,4 +700,17 @@ int main()
         printf("\n");
     }
 ```
-== 输出口诀表==
+
+**==输出口诀表==**
+```c
+    for (size_t i = 1; i <= 9; i++)
+    {
+        for (size_t j = 1; j <= i; j++)
+        {
+            printf("%d * %d = %d", i, j, (i * j));
+        }
+        printf("\n");
+    }
+    printf("goushi\t");
+```
+
