@@ -797,3 +797,21 @@ int main()
     return 0;
 }
 ```
+
+**==外部跳转==**
+```c
+#include <stdio.h>
+
+int main()
+{
+    for (size_t i = 0; i < 5; i++)
+    {
+        for (size_t i = 0; i < 5; i++)
+        {
+            printf("构思\n");
+            goto a;
+        }
+    }
+a:printf("构思成功");
+}
+```
