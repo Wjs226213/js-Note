@@ -864,3 +864,24 @@ int random(int origianl)
     return a;
 }
 ```
+
+
+==限定范围==
+>[!tip]
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main()
+{
+    srand(time(NULL));
+    // 3 -14;
+    // 14 -3 = 11
+    for (size_t i = 0; i < 3; i++)
+    {
+        int a = rand() % 11 + 3;
+        printf("a= %d", a);
+    }
+}
+```
