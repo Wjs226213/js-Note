@@ -907,5 +907,6 @@ for(int i = 0; i< 5;i++)
 ```
 ==获得数组的首地址==
 ```c
-int arr[]=
+int arr[] = {1,2,3};
+printf("%p\n",&arr);
 ```
