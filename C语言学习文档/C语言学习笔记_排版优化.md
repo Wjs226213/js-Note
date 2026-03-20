@@ -817,6 +817,18 @@ a:printf("构思成功");
 ```
 ### 函数的注意点
 >[!tip] 顺序执行，顶端定义
-```c
 
+```c
+#include <stdio.h>
+int add(int a, int b);
+int main()
+{
+    int result = add(10, 100);
+    printf("%d", result);
+    return 0;
+}
+int add(int a, int b)
+{
+    return (a + b);
+}
 ```
