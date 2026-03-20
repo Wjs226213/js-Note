@@ -885,3 +885,8 @@ int main()
 ```
 ### 数组
 >[!tip] int arr [length];
+
+==**声明数组**==
+```c
+int arr1[80];
+```
