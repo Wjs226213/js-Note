@@ -876,8 +876,9 @@ int random(int origianl)
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/。
+// 随机 67 - 88 之间的数字
 int main()
-
+	srand(time(NULL));
+	int a = rand() % (88 - 67) + 67;
 }
 ```
