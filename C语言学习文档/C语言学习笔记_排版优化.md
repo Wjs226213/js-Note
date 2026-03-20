@@ -876,7 +876,7 @@ int random(int origianl)
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-//确定
+/。
 int main()
 
 }
