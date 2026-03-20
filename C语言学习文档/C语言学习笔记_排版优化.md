@@ -868,6 +868,9 @@ int random(int origianl)
 
 ==限定范围==
 >[!tip]
+>1. 范围变成包头不包尾
+>2. 尾 - 头
+>3. 结果 + 需要确定的范围
 
 ```c
 #include <stdio.h>
