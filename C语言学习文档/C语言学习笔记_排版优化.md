@@ -714,4 +714,30 @@ int main()
     printf("goushi\t");
 ```
 
-==
+==判断质数==
+```c
+    #include <stdio.h>
+
+int main()
+{
+    int number = 17;
+    int count = 0;
+    for (size_t i = 2; i < number; i++)
+    {
+        if (number % i == 0)
+        {
+            count++;
+            break;
+        }
+    }
+    printf("count = %d\n", count);
+    if (count != 0)
+    {
+        printf("no 质数");
+    }
+    else
+    {
+        printf("yes");
+    }
+}
+```
