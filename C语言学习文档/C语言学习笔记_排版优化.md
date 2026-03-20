@@ -880,5 +880,6 @@ int random(int origianl)
 int main()
 	srand(time(NULL));
 	int a = rand() % (88 - 67) + 67;
+	printf("%d",a);
 }
 ```
