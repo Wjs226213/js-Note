@@ -834,4 +834,33 @@ int add(int a, int b)
 ```
 
 
-==设置
+**==设置随机数==**
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int add(int a, int b);
+int random(int origianl);
+int main()
+{
+    int result = add(10, 100);
+    printf("%d", result);
+    
+    int resultA = random(time(NULL));
+    printf("resultA =%d", resultA);
+    return 0;
+}
+
+int add(int a, int b)
+{
+    return (a + b);
+}
+
+
+int random(int origianl)
+{
+    srand(origianl);
+    int a = rand();
+    return a;
+}
+```
