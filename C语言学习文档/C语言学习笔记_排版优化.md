@@ -876,15 +876,8 @@ int random(int origianl)
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+//确定
 int main()
-{
-    srand(time(NULL));
-    // 3 -14;
-    // 14 -3 = 11
-    for (size_t i = 0; i < 3; i++)
-    {
-        int a = rand() % 11 + 3;
-        printf("a= %d", a);
-    }
+
 }
 ```
