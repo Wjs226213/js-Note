@@ -771,6 +771,8 @@ int main()
 
 ```
 **==幂级数==**
+>[!tip] 改变主要在   pow *= i 这句代码中
+
 ```c
 #include <stdio.h>
 
@@ -792,9 +794,6 @@ int main()
         sum += pow;
     }
     printf("sum = %d", sum);
-
     return 0;
-
 }
-
 ```
