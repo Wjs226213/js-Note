@@ -984,9 +984,12 @@ int main()
 #include<stdlib.h>
 #include<time.h>
 
-int sum(int arr[],int len)
+int arr[] sum(int number_len)
 {
 	srand(time(NULL));
-	
+	for(int i; i< 10;i++)
+	{
+		int rand() % 101 + 1;
+	}
 }
 ```
