@@ -981,5 +981,12 @@ int main()
 
 ```c
 #include <stdio.h>
-int add
+#include<stdlib.h>
+#include<time.h>
+
+int sum(int arr[],int len)
+{
+	srand(time(NULL));
+	
+}
 ```
