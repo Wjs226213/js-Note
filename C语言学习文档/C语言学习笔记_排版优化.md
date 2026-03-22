@@ -971,16 +971,15 @@ void bl(int arr[], int len, int a)
 	}
 
 }
-
 int main()
-
 {
-
-int arr[] = {1, 2, 3, 4, 5, 6, 8};
-
-int len = sizeof(arr) / sizeof(int);
-
-bl(arr, len, 0);
-
+	int arr[] = {1, 2, 3, 4, 5, 6, 8};
+	int len = sizeof(arr) / sizeof(int);
+	bl(arr, len, 0);
 }
+```
+
+```c
+#include <stdio.h>
+int add
 ```
