@@ -949,40 +949,26 @@ int main()
 void bl(int arr[], int len, int a)
 {
 	int max = arr[1];
-
 	int min = arr[1];
-
 	if (a == 1)
-
+	{
+		for (int i = 0; i < len; i++)
+		{
+			arr[i] > max ? max = arr[i] : 0;
+		}
+		printf("max = %d", max);
+	
+	}
+	else
 	{
 
-for (int i = 0; i < len; i++)
+		for (int i = 0; i < len; i++)
+		{
+			arr[i] < min ? min = arr[i] : 0;
+		}
 
-{
-
-arr[i] > max ? max = arr[i] : 0;
-
-}
-
-printf("max = %d", max);
-
-}
-
-else
-
-{
-
-for (int i = 0; i < len; i++)
-
-{
-
-arr[i] < min ? min = arr[i] : 0;
-
-}
-
-printf("min = %d", min);
-
-}
+		printf("min = %d", min);
+	}
 
 }
 
