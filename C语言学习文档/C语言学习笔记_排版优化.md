@@ -944,20 +944,17 @@ int main()
 ### 数组的算法题目
 
 ==最值==
-```c
+```C
 #include <stdio.h>
-
 void bl(int arr[], int len, int a)
-
 {
+	int max = arr[1];
 
-int max = arr[1];
+	int min = arr[1];
 
-int min = arr[1];
+	if (a == 1)
 
-if (a == 1)
-
-{
+	{
 
 for (int i = 0; i < len; i++)
 
