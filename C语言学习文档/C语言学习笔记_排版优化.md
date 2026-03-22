@@ -940,4 +940,64 @@ int main()
 }
 ```
 
-==
+
+### 数组的算法题目
+
+==最值==
+```c
+#include <stdio.h>
+
+void bl(int arr[], int len, int a)
+
+{
+
+int max = arr[1];
+
+int min = arr[1];
+
+if (a == 1)
+
+{
+
+for (int i = 0; i < len; i++)
+
+{
+
+arr[i] > max ? max = arr[i] : 0;
+
+}
+
+printf("max = %d", max);
+
+}
+
+else
+
+{
+
+for (int i = 0; i < len; i++)
+
+{
+
+arr[i] < min ? min = arr[i] : 0;
+
+}
+
+printf("min = %d", min);
+
+}
+
+}
+
+int main()
+
+{
+
+int arr[] = {1, 2, 3, 4, 5, 6, 8};
+
+int len = sizeof(arr) / sizeof(int);
+
+bl(arr, len, 0);
+
+}
+```
