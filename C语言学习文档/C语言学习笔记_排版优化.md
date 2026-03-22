@@ -979,24 +979,4 @@ int main()
 }
 ```
 
-```c
-#include <stdio.h>
-#include<stdlib.h>
-#include<time.h>
-
-int arr[] sum(int start_number,int stop_number,int random_len)
-{
-	srand(time(NULL));
-	int temp_arr[random_len];
-	for(int i; i< random_len;i++)
-	{
-		int temp =  rand() % stop_numebr + start_number;
-		temp_arr[i] = temp;
-	}
-	int sum = 0;
-	for(int i;i<random_len;i++){
-		sum += 	temp_arr[i];
-	}
-	printf("sum = %d "sum);
-}
-```
+``
