@@ -984,12 +984,13 @@ int main()
 #include<stdlib.h>
 #include<time.h>
 
-int arr[] sum(int number_len)
+int arr[] sum(int start_number,int stop_number,int random_len)
 {
 	srand(time(NULL));
-	for(int i; i< 10;i++)
+	int temp_arr[random_len]
+	for(int i; i< random_len;i++)
 	{
-		int rand() % 101 + 1;
+		int rand() % stop_numebr + start_number;
 	}
 }
 ```
