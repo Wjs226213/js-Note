@@ -995,7 +995,8 @@ int arr[] sum(int start_number,int stop_number,int random_len)
 	}
 	int sum = 0;
 	for(int i;i<random_len;i++){
-		
+		sum += 	temp_arr[i];
 	}
+	printf("sum = %d "sum);
 }
 ```
