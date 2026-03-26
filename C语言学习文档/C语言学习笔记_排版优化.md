@@ -1017,4 +1017,31 @@ int main()
 
 **==随机不相同==**
 ```C
+int contains(int arr[], int len, int num);
+int main()
+{
+    int arr[10] = {0};
+    int len = sizeof(arr) / sizeof(int);
+    srand(time(NULL));
+    for (int i = 0; i < len;)
+    {
+        int num = rand() % 10 + 1;
+        // 判断数据不相同
+        int flag = contains(arr, len, num);
+        if (!flag)
+        {
+            arr[i] = num;
+            i++;
+        }
+    }
+    for (size_t i = 0; i < len; i++)
+    {
+        printf("i = %d \n", arr[i]);
+    }
+    return 0;
+}
+```
+
+```
+
 ```
