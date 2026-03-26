@@ -982,33 +982,4 @@ int main()
 **==求和==**
 >[!tip] 创建一个随机函数，指定随机区间和数量，函数内部创建随机数据，通过临时数组保存，通过对随机数组比大小判断数组中的最大值
 ```c
-int sum(int start_number, int stop_number, int random_len)
-{
-    srand(time(NULL));
-    int temp_arr[random_len];
-    for (int i = 0; i < random_len; i++)
-    {
-        int temp = rand() % stop_number + start_number;
-        printf("i = %d\n");
-        temp_arr[i] = temp;
-    }
-    int sum = 0;
-    for (int i = 0; i < random_len; i++)
-    {
-    {
-        if (arr[i] == num)
-        {
-            return 1;
-        }
-    }
-    return 0;
-}
-```
->[!tip] 传入范围和数据量
-```c
-int main()
-{
-        int result_sum = sum(1, 100, 10);
-        printf("result_sum = %d",result_sum);
-}
 ```
