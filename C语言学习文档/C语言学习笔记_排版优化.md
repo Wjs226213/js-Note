@@ -1112,8 +1112,35 @@ int main(int argc, char *argv[]) {
 
 ### 数据类型
 **==二分查找==**
->[!tip] 有序数据，每次查找排一半的查找范围,目的表示的是判断目标数据的可能位置，数据的左边数据的右边还是数据的zo'h
+>[!tip] 有序数据，每次查找排一半的查找范围,目的表示的是判断目标数据的可能位置，数据的左边数据的右边还是数据的中间
 ```c
+int main(int argc, char *argv[]) {  
+    int arr[] = {1, 2, 3, 5, 6, 20, 22, 34, 56};  
+    int len = sizeof(arr) / sizeof(int);  
+  
+    int num = 5; // 首先是目标的数据  
+    int min = 0; // 开始索引  
+    int max = len - 1; // 结束索引  
+  
+    while (min <= max) {  
+        // 中间索引  
+        int mid = (min + max) / 2;  
+  
+        // 表示目标数据在右边  
+        if (arr[mid] < num) {  
+            min = mid + 1;  
+        }  
+        // 表示数据在左边  
+        else if (arr[mid] > num) {  
+            max = mid - 1;  
+        }  
+        // 表示目标数据和中间值是一样的  
+        else {  
+            printf("target index = %d", mid);  
+            break;  
+        }  
+    }  
+}
 ```
 
 
