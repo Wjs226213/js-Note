@@ -1016,7 +1016,7 @@ int main()
 ```
 
 **==随机不相同==**
->[!tip]
+>[!tip]   首先是不断的生成随机数字，在数字存储到数组之前
 
 ```C
 int contains(int arr[], int len, int num);
@@ -1028,6 +1028,7 @@ int main()
     for (int i = 0; i < len;)
     {
         int num = rand() % 10 + 1;
+        
         int flag = contains(arr, len, num);
         if (!flag)
         {
