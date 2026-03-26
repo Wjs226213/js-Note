@@ -1004,7 +1004,7 @@ int sum(int start_number, int stop_number, int random_len)
     return 0;
 }
 ```
->[]
+>[!tip] 传入范围和数据量
 ```c
 int main()
 {
