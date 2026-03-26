@@ -1041,7 +1041,17 @@ int main()
     return 0;
 }
 ```
-
-```
-
+>[!tip] 
+```c
+int contains(int arr[], int len, int num)
+{
+    for (int i = 0; i < len; i++)
+    {
+        if (arr[i] == num)
+        {
+            return 1;
+        }
+    }
+    return 0;
+}
 ```
