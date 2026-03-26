@@ -797,7 +797,7 @@ int main()
     return 0;
 }
 ```
-
+---
 **==外部跳转==**
 ```c
 #include <stdio.h>
@@ -1113,7 +1113,6 @@ int main(int argc, char *argv[]) {
 ### 数据类型
 **==基本查找==**
 ---
-
 
 
 
