@@ -1149,6 +1149,25 @@ int main(int argc, char *argv[]) {
 ### 排序算法
 **==冒泡排序==**
 ```c
-
+  
+int main() {  
+    int arr[] = {5, 3, 1, 24, 1};;  
+    int len = sizeof(arr) / sizeof(int);  
+  
+    for (int i = 0; i < len - 1; i++) {  
+        // 这里额循环少了一次但是i+1还是会得到最后一个数据  
+        for (int j = 0; j < len - 1 - i; j++) {  
+            if (arr[j] > arr[j + 1]) {  
+                int temp = arr[j];  
+                arr[j] = arr[j + 1];  
+                arr[j + 1] = temp;  
+            }  
+        }  
+    }  
+  
+    for (int i = 0; i < len; ++i) {  
+        printf("%d\n", arr[i]);  
+    }  
+}
 ```
 
