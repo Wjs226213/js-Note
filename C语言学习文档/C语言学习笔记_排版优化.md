@@ -980,7 +980,7 @@ int main()
 ```
 
 **==求和==**
->[!tip 设定第一个函数完成随机
+>[!tip] 创建一个随机函数，指定开始和结束
 
 ```c
 int sum(int start_number, int stop_number, int random_len)
@@ -1007,15 +1007,9 @@ int sum(int start_number, int stop_number, int random_len)
 ```
 
 ```c
-  
-
 int main()
-
 {
-
         int result_sum = sum(1, 100, 10);
-
         printf("result_sum = %d",result_sum);
-
 }
 ```
