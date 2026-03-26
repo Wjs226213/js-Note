@@ -1151,12 +1151,12 @@ int main(int argc, char *argv[]) {
 ```c
   
 int main() {  
-    int arr[] = {5, 3, 1, 24, 1};;  
+    int arr[] = {1, 3, 4, 5, 2};  
     int len = sizeof(arr) / sizeof(int);  
-  
-    for (int i = 0; i < len - 1; i++) {  
-        // 这里额循环少了一次但是i+1还是会得到最后一个数据  
-        for (int j = 0; j < len - 1 - i; j++) {  
+    for (int i = 0; i < len - 1; ++i) {  
+        // 轮次  
+        for (int j = 0; j < len - 1 - i; ++j) {  
+            // 每一轮比较刺激 -1 表示避免了索引越界， -i控制的是当前轮数比较的次数  
             if (arr[j] > arr[j + 1]) {  
                 int temp = arr[j];  
                 arr[j] = arr[j + 1];  
@@ -1164,10 +1164,6 @@ int main() {
             }  
         }  
     }  
-  
-    for (int i = 0; i < len; ++i) {  
-        printf("%d\n", arr[i]);  
-    }  
-}
+}}
 ```
 
