@@ -1082,3 +1082,30 @@ int main(int argc, char *argv[]) {
     }  
 }
 ```
+
+>[!tip] 将数据打乱
+```c
+#include <stdio.h>  
+#include <time.h>  
+#include <stdlib.h>  
+  
+// 反转数组  
+int main(int argc, char *argv[]) {  
+    int arr[10] = {1, 2, 3, 4, 5, 6, 7};  
+    const int len = sizeof(arr) / sizeof(int);  
+  
+    // 打乱数组中的数据  
+    srand(time(NULL));  
+  
+    for (int i = 0; i < len; ++i) {  
+        int index = rand() % len; //随机索引  
+        int temp = arr[i];  
+        arr[i] = arr[index];  
+        arr[index] = arr[temp];  
+    }  
+  
+    for (int i = 0; i < len; ++i) {  
+        printf("i = %d\n", arr[i]);  
+    }  
+}
+```
