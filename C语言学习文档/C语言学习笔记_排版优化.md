@@ -1016,6 +1016,8 @@ int main()
 ```
 
 **==随机不相同==**
+>[!tip]
+
 ```C
 int contains(int arr[], int len, int num);
 int main()
