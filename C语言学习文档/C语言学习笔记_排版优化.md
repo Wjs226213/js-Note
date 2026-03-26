@@ -1004,3 +1004,12 @@ int sum(int start, int stop, int len)
     return number_sum;
 }
 ```
+```c
+int main()
+{
+	int number_sum = sum(1,56,10);
+	printf("sum = %d",numbrt_sum);
+	r
+	
+}
+```
