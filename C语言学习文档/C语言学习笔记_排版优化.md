@@ -1057,3 +1057,28 @@ int contains(int arr[], int len, int num)
     return 0;
 }
 ```
+>[!tip] 反转数组中的数据
+```c
+int main(int argc, char *argv[]) {  
+    int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};  
+    int len = sizeof(arr) / sizeof(int);  
+  
+    for (int i = 0; i < len; ++i) {  
+        printf("i = %d\n", arr[i]);  
+    }  
+    int start = 0;  
+    int stop = len - 1;  
+  
+    while (start < stop) {  
+        int temp = arr[start];  
+        arr[start] = arr[stop];  
+        arr[stop] = temp;  
+        start++;  
+        stop--;  
+    }  
+    printf("-=-=-=-=-=--=-=-==-=-=");  
+    for (int i = 0; i < len; ++i) {  
+        printf("i = %d\n", arr[i]);  
+    }  
+}
+```
