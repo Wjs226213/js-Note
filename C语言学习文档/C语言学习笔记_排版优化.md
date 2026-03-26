@@ -1004,6 +1004,7 @@ int sum(int start, int stop, int len)
     return number_sum;
 }
 ```
+
 ```c
 int main()
 {
@@ -1013,3 +1014,4 @@ int main()
 	
 }
 ```
+**==随机不相同==**
