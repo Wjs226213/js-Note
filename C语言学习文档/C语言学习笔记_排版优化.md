@@ -1016,7 +1016,7 @@ int main()
 ```
 
 **==随机不相同==**
->[!tip]   首先是不断的生成随机数字，在数字存储到数组之前将当前数字与整个数组
+>[!tip]   首先是不断的生成随机数字，在数字存储到数组之前将当前数字与存储后的数组完成对比
 
 ```C
 int contains(int arr[], int len, int num);
@@ -1043,7 +1043,7 @@ int main()
     return 0;
 }
 ```
->[!tip] 
+>[!tip]  将随机生成的数据完成具体的判断，返回判断结果
 ```c
 int contains(int arr[], int len, int num)
 {
