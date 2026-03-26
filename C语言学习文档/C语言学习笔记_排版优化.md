@@ -1033,7 +1033,7 @@ int main()
         if (!flag)
         {
             arr[i] = num;
-            i++;
+            i++; // 因为没有写判断不成功的的结果会出现判断掉过的情况将i++写在条件表达式中
         }
     }
     for (size_t i = 0; i < len; i++)
