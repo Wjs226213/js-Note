@@ -1009,7 +1009,7 @@ int main()
 {
 	int number_sum = sum(1,56,10);
 	printf("sum = %d",numbrt_sum);
-	r
+	return 0;
 	
 }
 ```
