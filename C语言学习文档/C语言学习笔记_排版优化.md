@@ -1026,7 +1026,6 @@ int main()
     for (int i = 0; i < len;)
     {
         int num = rand() % 10 + 1;
-        
         int flag = contains(arr, len, num);
         if (!flag)
         {
