@@ -980,5 +980,29 @@ int main()
 ```
 
 **==求和==**
+>[!tip 
 
+```c
+int sum(int start_number, int stop_number, int random_len)
+{
+    srand(time(NULL));
+    int temp_arr[random_len];
+    for (int i = 0; i < random_len; i++)
+    {
+        int temp = rand() % stop_number + start_number;
+        printf("i = %d\n");
+        temp_arr[i] = temp;
+    }
+    int sum = 0;
+    for (int i = 0; i < random_len; i++)
+    {
+    {
+        if (arr[i] == num)
+        {
+            return 1;
+        }
+    }
+    return 0;
+}
+```
 
