@@ -40,7 +40,7 @@
     ]
   },
   "permissionMode": "yolo",
-  "model": "deepseek-reasoner,",
+  "model": "deepseek-reasoner",
   "thinkingBudget": "off",
   "effortLevel": "high",
   "enableAutoTitleGeneration": true,
@@ -70,7 +70,7 @@
   "claudeCliPathsByHost": {},
   "loadUserClaudeSettings": true,
   "lastClaudeModel": "haiku",
-  "lastCustomModel": "",
+  "lastCustomModel": "deepseek-reasoner",
   "lastEnvHash": "ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic|ANTHROPIC_DEFAULT_OPUS_MODEL=deepseek-reasoner|ANTHROPIC_MODEL=deepseek-reasoner,",
   "maxTabs": 3,
   "tabBarPosition": "input",
