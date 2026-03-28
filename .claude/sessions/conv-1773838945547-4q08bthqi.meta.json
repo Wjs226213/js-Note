@@ -3,17 +3,20 @@
   "title": "List available skills",
   "titleGenerationStatus": "success",
   "createdAt": 1773838945547,
-  "updatedAt": 1774702577478,
-  "lastResponseAt": 1774702577478,
-  "sessionId": null,
-  "sdkSessionId": "a28375c9-5bcd-4c44-8d01-d41b16373fd2",
+  "updatedAt": 1774709254052,
+  "lastResponseAt": 1774709254052,
+  "sessionId": "a59a8dfe-7d23-44e8-bc34-d580c8455709",
+  "sdkSessionId": "a59a8dfe-7d23-44e8-bc34-d580c8455709",
+  "previousSdkSessionIds": [
+    "a28375c9-5bcd-4c44-8d01-d41b16373fd2"
+  ],
   "usage": {
-    "model": "deepseek-reasoner",
-    "inputTokens": 652,
+    "model": "mimo-v2-pro",
+    "inputTokens": 0,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 65664,
+    "cacheReadInputTokens": 0,
     "contextWindow": 200000,
-    "contextTokens": 66316,
-    "percentage": 33
+    "contextTokens": 0,
+    "percentage": 0
   }
 }
