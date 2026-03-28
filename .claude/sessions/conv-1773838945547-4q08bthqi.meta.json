@@ -5,7 +5,7 @@
   "createdAt": 1773838945547,
   "updatedAt": 1774702577478,
   "lastResponseAt": 1774702577478,
-  "sessionId": "a28375c9-5bcd-4c44-8d01-d41b16373fd2",
+  "sessionId": null,
   "sdkSessionId": "a28375c9-5bcd-4c44-8d01-d41b16373fd2",
   "usage": {
     "model": "deepseek-reasoner",
