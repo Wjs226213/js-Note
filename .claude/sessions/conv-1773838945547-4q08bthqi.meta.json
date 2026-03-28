@@ -3,17 +3,17 @@
   "title": "List available skills",
   "titleGenerationStatus": "success",
   "createdAt": 1773838945547,
-  "updatedAt": 1773989552078,
-  "lastResponseAt": 1773989552078,
+  "updatedAt": 1774699835662,
+  "lastResponseAt": 1774699835662,
   "sessionId": "a28375c9-5bcd-4c44-8d01-d41b16373fd2",
   "sdkSessionId": "a28375c9-5bcd-4c44-8d01-d41b16373fd2",
   "usage": {
     "model": "deepseek-reasoner,",
-    "inputTokens": 781,
+    "inputTokens": 58,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 69632,
+    "cacheReadInputTokens": 47296,
     "contextWindow": 200000,
-    "contextTokens": 70413,
-    "percentage": 35
+    "contextTokens": 47354,
+    "percentage": 24
   }
 }
