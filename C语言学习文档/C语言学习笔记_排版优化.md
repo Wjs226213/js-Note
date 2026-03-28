@@ -1169,6 +1169,36 @@ int main() {
 **==选择排序==**
 >[!tip] 每次都使用第一个索引和后面的所有的数据完成对比和交换位置
 
- ```c
-
+```c
+#include <stdio.h>  
+#include <stdlib.h>    
+int main()  
+{  
+    int arr[] = {1, 3, 4, 5, 2};  
+    int len = sizeof(arr) / sizeof(int);  
+  
+    // 排序的范围是数组的长度少一个，不需要和自己完成排序  
+    for (int i = 0; i < len - 1; ++i)  
+    {  
+  
+        // 外层循环要和当前位置后的每一个元素进行比较  
+        for (int j = i + 1; j < len; j++)  
+        {  
+            // 一次表示i索引后的每一个索引  
+            if (arr[i] > arr[j])  
+            {  
+                int temp = arr[j];  
+                arr[j] = arr[i];  
+                arr[i] = temp;  
+            }  
+        }  
+    }  
+  
+    for (int i = 0; i < len; i++)  
+    {  
+        printf("%d", arr[i]);  
+    }  
+  
+    return 0;  
+}
 ```
