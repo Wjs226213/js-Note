@@ -1168,7 +1168,6 @@ int main() {
 ```
 **==选择排序==**
 >[!tip] 每次都使用第一个索引和后面的所有的数据完成对比和交换位置
-
 ```c
 #include <stdio.h>  
 #include <stdlib.h>    
