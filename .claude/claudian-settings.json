@@ -40,7 +40,7 @@
     ]
   },
   "permissionMode": "yolo",
-  "model": "deepseek-reasoner,",
+  "model": "mimo-v2-pro",
   "thinkingBudget": "off",
   "effortLevel": "high",
   "enableAutoTitleGeneration": true,
@@ -57,7 +57,7 @@
     "~/Downloads"
   ],
   "persistentExternalContextPaths": [],
-  "environmentVariables": "ANTHROPIC_BASE_URL:https://api.xiaomimimo.com/anthropic,\nANTHROPIC_MODEL=deepseek-reasoner,\nANTHROPIC_DEFAULT_OPUS_MODEL=deepseek-reasoner",
+  "environmentVariables": "ANTHROPIC_BASE_URL:https://api.xiaomimimo.com/anthropic,\nANTHROPIC_mimo-v2-pro,\nANTHROPIC_DEFAULT_OPUS_MODEL=mimo-v2-pro",
   "envSnippets": [],
   "customContextLimits": {},
   "keyboardNavigation": {
@@ -71,7 +71,7 @@
   "loadUserClaudeSettings": true,
   "lastClaudeModel": "haiku",
   "lastCustomModel": "deepseek-reasoner",
-  "lastEnvHash": "ANTHROPIC_DEFAULT_OPUS_MODEL=deepseek-reasoner|ANTHROPIC_MODEL=deepseek-reasoner,",
+  "lastEnvHash": "ANTHROPIC_DEFAULT_OPUS_MODEL=mimo-v2-pro",
   "maxTabs": 3,
   "tabBarPosition": "input",
   "enableAutoScroll": true,
