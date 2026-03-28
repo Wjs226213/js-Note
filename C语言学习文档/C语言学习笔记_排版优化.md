@@ -1148,7 +1148,10 @@ int main(int argc, char *argv[]) {
 ```
 ### 排序算法
 **==冒泡排序==**
->[!tip]
+>[!tip] 
+>当前代码的执行逻辑是首先我要寻找一个数字只作为z
+>
+
 ```c
   
 #include <stdio.h>  
