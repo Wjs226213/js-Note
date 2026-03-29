@@ -1316,6 +1316,14 @@ int main(){
 **悬空指针** ： 表示的是内存地址被释放后又再次被其他程序利用了
 ```c
 #include <stdio.h>
-in
-
+int* shit();
+int main()
+{
+	
+}
+int* shit()
+{
+	int a = 10;
+	int* p = 
+}
 ```
