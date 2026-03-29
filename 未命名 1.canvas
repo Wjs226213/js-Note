@@ -1,4 +1,8 @@
 {
-	"nodes":[],
+	"nodes":[
+		{"id":"f4180236bc532a39","x":-250,"y":381,"width":83,"height":50,"type":"text","text":"变量"},
+		{"id":"f21da5bd027b2312","x":-242,"y":501,"width":126,"height":54,"type":"text","text":"内存地址"},
+		{"id":"dd01c9c790fc7da7","x":-18,"y":398,"width":113,"height":50,"type":"text","text":"指针变量"}
+	],
 	"edges":[]
 }
