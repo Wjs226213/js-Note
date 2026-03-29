@@ -1397,6 +1397,9 @@ int main() {
     printf("%p\n", &a);  
     printf("%p\n", &p);  
     printf("%d\n", **p2); // 输出的是a的内存地址  
+    
+    printf("%p\n", &a);  
+	printf("%p\n", *p2); // 输出的是a的内存地址 同时也引用到了a的内存地址
 }
 ```
 
