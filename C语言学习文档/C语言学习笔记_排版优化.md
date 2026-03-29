@@ -1284,4 +1284,5 @@ void GetMaxAndMin(int *max, int *min, int arr[], int len)
 ```
 ---
 ## 指针高级
-**指针的数据l**
+
+**指针的数据类型** ： 使用数组的思想了解的话内存地址表示的是第一个数据，但是如果
