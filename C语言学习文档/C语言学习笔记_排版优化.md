@@ -1295,6 +1295,9 @@ p+1;
 在原来的地址的基础上走了4个字节走在0x05空间中
 ```c
 int main(){
-	int arr
+	int arr[]= {1,23,4,4};
+	int* p1 = &arr[0];
+	printf("%d\n",*p1);
+	printf("%d\n",*p1);
 }
 ```
