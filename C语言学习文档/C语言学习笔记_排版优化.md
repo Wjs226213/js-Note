@@ -1459,7 +1459,7 @@ int main() {
     int *arr5[3] = {arr, arr2, arr3};  
   
   
-    printf("arr = %p\n", *arr5);  
+    printf("arr = %p\n", *arr5);  // 解引用了arr中的数据也就是arr[0]
     printf("arr = %p\n", &arr[0]);  
     printf("arr = %d\n", arr5);  
     printf("arr = %d\n", arr);  
@@ -1467,7 +1467,7 @@ int main() {
 }
 ```
 
->[!tip] 在上卖弄z
+>[!tip] =上面的内容展示了双重指针变量的引用关系
 ---
 
   
