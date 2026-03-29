@@ -1461,7 +1461,7 @@ int main() {
 	  
 	printf("arr = %p\n", *arr5);  // 保存的是 arr变量中第一个数据  
 	printf("arr = %p\n", &arr[0]);  
-	printf("arr = %p\n", arr5); // 数组本身的首地址 ，首地址中保存的是arr  
+	printf("arr = %p\n", arr5); // 数组本身的首地址 ，首地址中保存的是arrd的首地址  
 	printf("arr = %p\n", arr);
     return 0;  
 }
