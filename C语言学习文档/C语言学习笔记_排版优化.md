@@ -1247,7 +1247,41 @@ int main()
 
 
 **指针的作用**
+```c
+#include <stdio.h>
+void GetMaxAndMin(int *max, int *min, int arr[], int len);
+int main()
+{
+    int arr[] = {1, 2, 3, 4, 5, 6};
+    int max = arr[0];
+    int min = arr[0];
+    int len = sizeof(arr) / sizeof(int);
+    GetMaxAndMin(&max, &min, arr, len);
+    printf("max = %d", max);
+    printf("min = %d", min);
+}
 
+void GetMaxAndMin(int *max, int *min, int arr[], int len)
+{
+
+    for (int i = 0; i < len; i++)
+    {
+        if (arr[i] > *max)
+        {
+            *max = arr[i];
+        }
+    }
+
+    for (int i = 0; i < len; i++)
+    {
+        if (arr[i] < *min)
+        {
+            *min = arr[i];
+        }
+    }
+}
+
+```
 
 
 
