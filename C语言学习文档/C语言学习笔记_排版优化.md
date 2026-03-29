@@ -1451,18 +1451,18 @@ int main() {
 #include <stdio.h>  
   
 int main() {  
-    int arr[3] = {1, 2, 3};  
-    int arr2[4] = {4, 5, 6, 7};  
-    int arr3[5] = {7, 8, 9, 10, 11};  
+int arr[3] = {1, 2, 3};  
+int arr2[4] = {4, 5, 6, 7};  
+int arr3[5] = {7, 8, 9, 10, 11};  
   
-    // 定义了一个指针数组，保存数组的首地址  
-    int *arr5[3] = {arr, arr2, arr3};  
+// 定义了一个指针数组，保存数组的首地址  
+int *arr5[3] = {arr, arr2, arr3};  
   
   
-    printf("arr = %p\n", *arr5);  // 解引用了arr中的数据也就是&arr[0]
-    printf("arr = %p\n", &arr[0]);  
-    printf("arr = %d\n", arr5);   // 其中保存到额是
-    printf("arr = %d\n", &arr);  
+printf("arr = %p\n", *arr5);  // 保存的是 arr变量中第一个数据  
+printf("arr = %p\n", &arr[0]);  
+printf("arr = %p\n", arr5); // 数组本身的首地址  
+printf("arr = %p\n", arr);
     return 0;  
 }
 ```
