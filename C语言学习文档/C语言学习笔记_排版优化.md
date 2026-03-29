@@ -1310,6 +1310,6 @@ int main(){
 int main(){
 	int a = 10;
 	int* p1 = &a;
-	printf("%p)
+	printf("%p\n",p1 + 1000)
 }
 ```
