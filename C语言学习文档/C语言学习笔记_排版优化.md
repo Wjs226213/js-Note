@@ -1427,7 +1427,25 @@ int main() {
 
 ==使用数组指针完成修改数据==
 ```c
-
+int main() {  
+    int arr[] = {1, 2, 3, 4, 5};  
+    int len = sizeof(arr) / sizeof(int);  
+  
+    int *p1 = arr; // 指向了第一个数据的内存地址  
+    int *p2 = &arr[0];  
+  
+    for (int i = 0; i < len; ++i) {  
+        *(p1 + i) = *(p1 + i) + 1;  
+        printf("%d", *(p1 + i)); // 在前面的额 *(p1 + i) 这个部分获了数组中每个元素的数据通过内地址获取的现在在每个元素进行了修改  
+    }  
+    printf("\n-=--=--=-\n");  
+    for (int i = 0; i < len; ++i) {  
+        printf("%d", arr[i]);  
+    }  
+}
 ```
+
+
+
 ---
 
