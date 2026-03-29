@@ -1447,7 +1447,27 @@ int main() {
 
 ==小补充==
 `&arr` ： 通过这样是将整个数组获得（全部的数组的字节）
+```c
+#include <stdio.h>  
+  
+int main() {  
+    int arr[3] = {1, 2, 3};  
+    int arr2[4] = {4, 5, 6, 7};  
+    int arr3[5] = {7, 8, 9, 10, 11};  
+  
+    // 定义了一个指针数组，保存数组的首地址  
+    int *arr5[3] = {arr, arr2, arr3};  
+  
+  
+    printf("arr = %p\n", *arr5);  
+    printf("arr = %p\n", &arr[0]);  
+    printf("arr = %d\n", arr5);  
+    printf("arr = %d\n", arr);  
+    return 0;  
+}
+```
 
+>[!tip] 在上卖弄z
 ---
 
   
