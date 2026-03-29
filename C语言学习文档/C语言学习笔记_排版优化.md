@@ -1319,11 +1319,13 @@ int main(){
 int* shit();
 int main()
 {
-	
+	int* a = shit();
+	printf("%d",*a);
 }
 int* shit()
 {
 	int a = 10;
-	int* p = 
+	int* p = &a;
+	return p;
 }
 ```
