@@ -1459,9 +1459,9 @@ int main() {
     int *arr5[3] = {arr, arr2, arr3};  
   
   
-    printf("arr = %p\n", *arr5);  // 解引用了arr中的数据也就是arr[0]
+    printf("arr = %p\n", *arr5);  // 解引用了arr中的数据也就是&arr[0]
     printf("arr = %p\n", &arr[0]);  
-    printf("arr = %d\n", arr5);  
+    printf("arr = %d\n", arr5);   // 其中保存到额是
     printf("arr = %d\n", arr);  
     return 0;  
 }
