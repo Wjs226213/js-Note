@@ -1332,5 +1332,32 @@ int* shit()
 ```
 **void类型指针**：没有办法操作数据但是可以接受任何数据类型的地址
 ```c
-
+#include <stdio.h>  
+void shit(void *p1, void *p2, int len) {  
+    /*   
+	*p1 ， *p2 原始数据的内存地址赋值  
+     len ：数据的字节数量  
+     代码实现了接受任意类型的数据类型完成交换  
+     */    char *pc1 = p1;  
+    char *pc2 = p2;  
+    int temp = 0;  
+  
+    for (int i = 0; i < len; ++i) {  
+        temp = *pc1;  
+        *pc1 = *pc2;  
+        *pc2 = temp;  
+        pc1++;  
+        pc2++;  
+    }  
+}  
+  
+int main() {  
+    long long B = 20000000564312312;  
+    long long C = 100;  
+  
+    int len = sizeof(B);  
+    shit(&B, &C, len);  
+    printf("B = %lld", B);  
+    printf("C = %lld", C);  
+}
 ```
