@@ -1282,9 +1282,6 @@ void GetMaxAndMin(int *max, int *min, int arr[], int len)
 }
 
 ```
-
-
-
-
-
-
+---
+## 指针高级
+**指针的数据l**
