@@ -1331,7 +1331,7 @@ int* shit()
 }
 ```
 **void类型指针**：没有办法操作数据但是可以接受任何数据类型的地址
-*在c语言中不推荐
+*在c语言中不推荐返回多条数据而是将数据传递指针完成修改
 ```c
 #include <stdio.h>  
 void shit(void *p1, void *p2, int len) {  
