@@ -1392,7 +1392,7 @@ int main() {
     int a = 10;  
     int b = 230;  
     int *p = &a;  
-    int **p2 = &p;  
+    int ** p2=&p;  
   
     printf("%p\n", &a);  
     printf("%p\n", &p);  
