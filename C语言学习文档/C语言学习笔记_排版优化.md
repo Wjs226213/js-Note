@@ -1492,6 +1492,7 @@ int main() {
     int arr3[5] = {7, 8, 9, 10, 11};  
     int *arr4[3] = {arr, arr2, arr3}; // 指针数组存储三个内存地址,  
   
+	// 计算整个arr4的字节数量 
     int len = sizeof(arr4) / sizeof(int *);  
     printf("%d", len);  
     for (int i = 0; i < len; i++) {  
