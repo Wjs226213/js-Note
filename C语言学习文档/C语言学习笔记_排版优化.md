@@ -1479,3 +1479,28 @@ int main() {
 
 >[!tip] =上面的内容展示了双重指针变量的引用关系
 ---
+
+==使用指针完成数组遍历== (**错误展示**)
+>[!tip] 在下面代码的错误部分是`arr4[i]` 中记录的是arr的内存地址内存地址转换后的结果是8个字节地址和数据类型完成计算的结果是错误的
+
+```c
+ #include <stdio.h>  
+  
+int main() {  
+    int arr[3] = {1, 2, 3};  
+    int arr2[4] = {4, 5, 6, 7};  
+    int arr3[5] = {7, 8, 9, 10, 11};  
+    int *arr4[3] = {arr, arr2, arr3}; // 指针数组存储三个内存地址,  
+  
+    int len = sizeof(arr4) / sizeof(int *);  
+    printf("%d", len);  
+    for (int i = 0; i < len; i++) {  
+        int max = sizeof(arr4[i]) / sizeof(int);  
+        for (int j = 0; j < max; ++j) {  
+            printf("%d\n", arr4[i][j]);  
+        }  
+    }  
+  
+    return 0;  
+}
+```
