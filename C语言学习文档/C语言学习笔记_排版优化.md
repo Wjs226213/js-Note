@@ -816,7 +816,7 @@ int main()
 a:printf("构思成功");
 }
 ```
-## 函数的注意点
+### 函数的注意点
 >[!tip] 顺序执行，顶端定义
 
 ```c
@@ -1331,6 +1331,7 @@ int* shit()
 }
 ```
 **void类型指针**：没有办法操作数据但是可以接受任何数据类型的地址
+*在c语言中不推荐
 ```c
 #include <stdio.h>  
 void shit(void *p1, void *p2, int len) {  
