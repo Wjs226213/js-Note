@@ -1505,3 +1505,28 @@ int main() {
     return 0;  
 }
 ```
+
+==正确版本==
+>[!tip] 
+```c
+  
+int main() {  
+    int arr[3] = {1, 2, 3};  
+    int arr2[4] = {4, 5, 6, 7};  
+    int arr3[5] = {7, 8, 9, 10, 11};  
+    int *arr4[3] = {arr, arr2, arr3}; // 指针数组存储三个内存地址,  
+  
+    int len1 = sizeof(arr) / sizeof(int);  
+    int len2 = sizeof(arr2) / sizeof(int);  
+    int len3 = sizeof(arr3) / sizeof(int);  
+    int arr_len[] = {len1, len2, len3};  
+    int len = sizeof(arr4) / sizeof(int *);  
+  
+    for (int i = 0; i < len; ++i) {  
+        for (int j = 0; j < arr_len[i]; ++j) {  
+            printf("%d", arr4[i][j]);  
+        }  
+    }  
+    return 0;  
+}
+```
