@@ -1596,3 +1596,57 @@ int method2(int num1, int num2) {
 ```
 
 ### 函数指和函数指针数组
+```c
+#include <stdio.h>  
+  
+// 函数声明  
+int add(int a, int b);  
+  
+int sub(int a, int b);  
+  
+int main(int argc, char *argv[]) {  
+    int (*p[4])(int, int) = {add, sub};  
+    int choose; // 选择变量  
+    int num1; // 计算参数1  
+    int num2; // 计算参数2  
+  
+    printf("input choose number");  
+    scanf("%d", &choose);  
+  
+    switch (choose) {  
+        case 0:  
+            printf("num1 = ");  
+            scanf("%d", &num1);  
+  
+            printf("num2 = ");  
+            scanf("%d", &num2);  
+  
+            int result1 = p[choose](num1, num2);  
+            printf("%d\n", result1);  
+            break;  
+  
+        case 1:  
+            printf("num1 = ");  
+            scanf("%d", &num1);  
+  
+            printf("num2 = ");  
+            scanf("%d", &num2);  
+  
+            int result2 = p[choose](num1, num2);  
+            printf("%d\n", result2);  
+            break;  
+  
+        default:  
+            printf("not select");  
+    }  
+    return 0;  
+}  
+  
+int add(int a, int b) {  
+    return a + b;  
+}  
+  
+int sub(int a, int b) {  
+    return a - b;  
+}
+```
