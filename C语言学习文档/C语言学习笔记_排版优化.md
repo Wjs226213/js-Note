@@ -1668,3 +1668,22 @@ char *str2 = "abc"; // 这个str2的地址和str1的地址是相同的数据
 * 第二种创建方式在创建abcd的时候会检查只读常量区中哟没有“abc"吗，保持数据的单一性质
 
 
+### 字符串数组的遍历
+```c
+int main(int argc, char *argv[]) {  
+    char str[100];  
+    printf("please str");  
+  
+    scanf("%s", str);  
+    char *p = str; // 将首地址给了指针变量，  
+  
+    while (1) {  
+        char c = *p; // 将首地址的内存地址解引用获得了数据  
+        if (c == '\0') {  
+            break;  
+        }  
+        printf("%c", c);  
+        p++; // 这个地方将指针移动数据偏移  
+    }  
+    return 0;
+```
