@@ -1531,5 +1531,35 @@ int main() {
 }
 ```
 
-==2维数组和指针==
+### 2维数组和指针
+>[!tip] z
+```c
+int main() {  
+    int arr[3][5] = {  
+        {1, 2, 3, 4, 5},  
+        {11, 22, 33, 44, 55},  
+        {111, 222, 333, 444, 555}  
+    };  
+  
+    int (*p)[5] = arr; // 2维度数组的指针变量  
+  
+    int len = sizeof(arr) / sizeof(int); // 计算个数  
+    // printf("%d", len);  
+  
+    int len_L = sizeof(arr[0]) / sizeof(arr[0][0]); // 计算行  
+    printf("%d\n", len_L);  
+  
+    int len_H = len / len_L; // 列计算  
+    printf("%d\n", len_H);  
+  
+  
+    for (int i = 0; i < len_H; ++i) {  
+        for (int j = 0; j < len_L; ++j) {  
+            printf("%d ", *(*p + j));  
+        }  
+        printf("\n");  
+        p++; // 原本保存的1维度数组指针现在便宜到另外一个  
+    }  
+    return 0;
+```
 
