@@ -1564,6 +1564,31 @@ int main() {
 >
 >通过``* *p`` 的方式定位到了某一个元素但是，指针变量本身具有两层含义**p = 给p这个内存地址解码两次所以p直接可以追溯到解码之前的结果，
 
-
+```c
+#include <stdio.h>  
+  
+void method1();  
+  
+int method2(int num1, int num2);  
+  
+int main() {  
+    // 定义函数指针  
+    int (*p1)(int, int) = method2;  
+    void (*p2)() = method1;  
+  
+    // 利用函数指针调用函数  
+    int num = p1(1, 1231312);  
+    printf("num = %d", num);  
+    p2();  
+}  
+  
+void method1() {  
+    printf("shit");  
+}  
+  
+int method2(int num1, int num2) {  
+    return num1 + num2;  
+}
+```
 
 
