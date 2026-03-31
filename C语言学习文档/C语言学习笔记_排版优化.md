@@ -1533,8 +1533,9 @@ int main() {
 
 ### 2维数组和指针
 >[!tip] 重点在于2维数组本省就是一个2级指针，本省是第一个数组的内存地址，这个内存地址中保存了1维度数组的第一个元素的内存地址，内存地址的偏移可以获得其他数据，先偏移后解引用
-
 ```c
+#include <stdio.h>  
+  
 int main() {  
     int arr[3][5] = {  
         {1, 2, 3, 4, 5},  
@@ -1542,25 +1543,18 @@ int main() {
         {111, 222, 333, 444, 555}  
     };  
   
-    int (*p)[5] = arr; // 2维度数组的指针变量  
+    // 或者arr的指针变量和步长  
+    int (*p)[5] = arr;  
   
-    int len = sizeof(arr) / sizeof(int); // 计算个数  
-    // printf("%d", len);  
-  
-    int len_L = sizeof(arr[0]) / sizeof(arr[0][0]); // 计算行  
-    printf("%d\n", len_L);  
-  
-    int len_H = len / len_L; // 列计算  
-    printf("%d\n", len_H);  
-  
-  
-    for (int i = 0; i < len_H; ++i) {  
-        for (int j = 0; j < len_L; ++j) {  
-            printf("%d ", *(*p + j));  
+    for (int i = 0; i < 3; ++i) {  
+        for (int j = 0; j < 5; ++j) {  
+            printf("%d", *(*p + j));  
         }  
         printf("\n");  
-        p++; // 原本保存的1维度数组指针现在便宜到另外一个  
     }  
-    return 0;
+    p++;  
+}
 ```
+==当前重点==
+int (*p)[5] = arr;
 
