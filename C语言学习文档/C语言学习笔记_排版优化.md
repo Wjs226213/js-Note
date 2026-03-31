@@ -1650,3 +1650,5 @@ int sub(int a, int b) {
     return a - b;  
 }
 ```
+## 字符数组
+s
