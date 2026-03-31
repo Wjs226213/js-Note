@@ -1656,7 +1656,7 @@ int sub(int a, int b) {
 ```
 char str[4] = "abc";   // 数组
 char *str1 = "abc"; // 指针的方式
-char *str2 = "abc"; // 这个str2的地址和str1 
+char *str2 = "abc"; // 这个str2的地址和str1的地址是相同的数据
 ```
 
 * 第一种定义的方式内容是可以进行修改的
