@@ -1652,3 +1652,7 @@ int sub(int a, int b) {
 ```
 ## 字符数组
 ==创建方式==
+```
+char str[4] = "abc";  
+char *str1 = "abc";
+```
