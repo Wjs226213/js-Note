@@ -1651,8 +1651,12 @@ int sub(int a, int b) {
 }
 ```
 ## 字符数组
-==创建方式==
+
+**创建方式**
 ```
-char str[4] = "abc";  
-char *str1 = "abc";
+char str[4] = "abc";   // 数组
+char *str1 = "abc"; // 指针的方式
 ```
+
+
+**==拓展==**：字符串的最后有y
