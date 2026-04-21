@@ -21,35 +21,35 @@ const steps = [
     subtitle: "Image Data Collection",
     details: ["原始人脸图像", "多角度/光照", "数据增强"],
     color: COLORS.input,
-    stepNum: "①",
+    stepNum: "01",
   },
   {
     title: "人脸检测",
     subtitle: "Face Detection",
     details: ["Haar / HOG 特征", "MTCNN / YOLO", "人脸区域裁剪"],
     color: COLORS.main,
-    stepNum: "②",
+    stepNum: "02",
   },
   {
     title: "数据归一化",
     subtitle: "Normalization",
     details: ["灰度转换", "尺寸统一", "像素值归一化"],
     color: COLORS.main,
-    stepNum: "③",
+    stepNum: "03",
   },
   {
     title: "特征提取",
     subtitle: "Feature Extraction",
     details: ["CNN 特征", "LBP / HOG", "降维 PCA"],
     color: COLORS.main,
-    stepNum: "④",
+    stepNum: "04",
   },
   {
     title: "多人脸分类器",
     subtitle: "Multi-Face Classifier",
     details: ["SVM / Softmax", "深度学习分类", "身份识别输出"],
     color: COLORS.accent,
-    stepNum: "⑤",
+    stepNum: "05",
   },
 ];
 
@@ -128,7 +128,7 @@ steps.forEach((step, i) => {
   // 详细信息
   step.details.forEach((detail, di) => {
     svg += `  <text x="${x + boxW / 2}" y="${y + 142 + di * 26}" text-anchor="middle"
-        font-family="SimSun, SimHei, Microsoft YaHei, sans-serif" font-size="12" fill="white" opacity="0.92">\u2022 ${escapeXml(detail)}</text>\n`;
+        font-family="SimSun, SimHei, Microsoft YaHei, sans-serif" font-size="12" fill="white" opacity="0.92">- ${escapeXml(detail)}</text>\n`;
   });
 });
 
