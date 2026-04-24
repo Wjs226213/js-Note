@@ -7,6 +7,5 @@
 // root : 超级管理
 // sbin：存放超级管理员命令的目录
 // tree ：展示目录的树结构的命令
-![](assets/dome1/file-20260424192423342.xmind)
 
-![](assets/dome1/file-20260424192423369.xmind)
+
