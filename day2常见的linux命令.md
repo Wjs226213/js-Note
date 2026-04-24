@@ -18,12 +18,20 @@
 2. 工具选型：Xshell/XMAX远程连接工具
 3. 实操步骤：安装远程工具 → 基于协议连接Linux远端服务器
 
+*首先是安装*
 ``` 
 sudo apt update
 sudo apt install openssh-server -y  # ubuntu
 
+sudo dnf installl openssh-server -y # centos
 
 ```
+
+*启动远程连接*
+```
+su
+```
+
 ---
 ## 三、Linux基础系统开关机命令
 ### 3.1 重启命令
