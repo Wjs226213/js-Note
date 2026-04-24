@@ -44,11 +44,14 @@ sudo systemctl enable sshd
 sudo systemctl status ssh
 
 #centos
-sydo systemctl status sshd
+sudo systemctl status sshd
 ```
 
 *放行防火墙*
-
+```
+#ubuntu
+sudu ufw allow 22/tcp
+```
 
 
 ---
