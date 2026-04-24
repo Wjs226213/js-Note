@@ -47,7 +47,8 @@ sudo systemctl status ssh
 sydo systemctl status sshd
 ```
 
-放行
+*放行防火墙*
+
 
 
 ---
