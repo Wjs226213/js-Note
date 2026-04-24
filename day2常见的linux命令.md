@@ -40,8 +40,15 @@ sudo systemctl enable sshd
 
 *查看状态*
 ```
-sudo systemctl st
+# ubuntu
+sudo systemctl status ssh
+
+#centos
+sydo systemctl status sshd
 ```
+
+放行
+
 
 ---
 ## 三、Linux基础系统开关机命令
