@@ -29,7 +29,18 @@ sudo dnf installl openssh-server -y # centos
 
 *启动远程连接*
 ```
-su
+# ubuntu
+sudo systemctl start ssh
+sudo systemctl enable ssh
+
+# centos
+sudo systemctl start sshd
+sudo systemctl enable sshd
+```
+
+*查看状态*
+```
+sudo systemctl st
 ```
 
 ---
