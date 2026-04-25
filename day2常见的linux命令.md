@@ -178,6 +178,8 @@ find ./ -size +23M -type f d l
 find ./ -name '*.json' -size +23M -type f -mtime +2
 ```
 
+*-exec：查找后执行文件*
+
 
 
 
