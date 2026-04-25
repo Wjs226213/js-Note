@@ -175,7 +175,7 @@ find ./ -size +23M -type f d l
 
 *-mtime: 根据文件修改的时间来查找*
 ```
-find ./ -name '*.json' - size +23m -type f -mtime +2
+find ./ -name '*.json' -size +23M -type f -mtime +2
 ```
 
 
