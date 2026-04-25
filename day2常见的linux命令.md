@@ -168,7 +168,7 @@ find ./ -name '*.json'
 
 *大小查找*
 ```
-#查找大于23M的p
+#查找大于23M的普通文件 文件夹 链接
 find ./ -size +23M -type f d l
 
 ```
