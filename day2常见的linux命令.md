@@ -166,13 +166,17 @@ scp -r 用户名@远程IP:远程路径 本地路径
 find ./ -name '*.json'
 ```
 
-*大小查找*
+*-size : 大小查找*
 ```
 #查找大于23M的普通文件 文件夹 链接
 find ./ -size +23M -type f d l
 
 ```
 
+*-mtime: 根据文件修改的时间来查找*
+```
+find 。/ -name '*.jh'
+```
 
 
 
