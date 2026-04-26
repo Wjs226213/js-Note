@@ -180,7 +180,7 @@ find ./ -name '*.json' -size +23M -type f -mtime +2
 
 *-exec：查找后执行后接的命令*
 ```
-find 
+find -exec{} 查找到某些文件后完成执行其他的命令
 ```
 
 
